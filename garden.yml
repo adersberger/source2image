@@ -1,0 +1,24 @@
+kind: Project
+name: god-project
+environments:
+  - name: local
+    providers:
+      - name: local-kubernetes
+        context: docker-desktop
+---
+kind: Module
+name: god
+description: God service
+type: container
+services:
+  - name: god
+    ports:
+      - name: http
+        containerPort: 8080
+    healthCheck:
+      httpGet:
+        path: /
+        port: http
+    ingresses:
+      - path: /
+        port: http

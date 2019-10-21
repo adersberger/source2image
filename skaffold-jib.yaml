@@ -1,0 +1,11 @@
+apiVersion: skaffold/v1beta16
+kind: Config
+build:
+  artifacts:
+      - image: skaffold-example-god
+        context: .
+        jib: {}
+deploy:
+  kubectl:
+    manifests:
+      - src/k8s/*.yaml
