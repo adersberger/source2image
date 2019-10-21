@@ -1,0 +1,11 @@
+
+[2019-10-21T22:42:55.342Z] Error: WebSocket is not open: readyState 2 (CLOSING)
+    at sendAfterClose (/snapshot/dist/node_modules/koa-websocket/node_modules/ws/lib/websocket.js:729:17)
+    at WebSocket.send (/snapshot/dist/node_modules/koa-websocket/node_modules/ws/lib/websocket.js:338:7)
+    at send (/snapshot/dist/build/src/server/server.js:0)
+    at EventBus.eventListener (/snapshot/dist/build/src/server/server.js:0)
+    at EventBus.EventEmitter.emit (/snapshot/dist/node_modules/eventemitter2/lib/eventemitter2.js:330:22)
+    at EventBus.emit (/snapshot/dist/build/src/events.js:0)
+    at TaskGraph.<anonymous> (/snapshot/dist/build/src/task-graph.js:0)
+    at Generator.next (<anonymous>)
+    at fulfilled (/snapshot/dist/build/src/task-graph.js:0)
