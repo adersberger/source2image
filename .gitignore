@@ -33,3 +33,4 @@ build/
 ### Garden ###
 /.garden/
 error.log
+/.mvn/
