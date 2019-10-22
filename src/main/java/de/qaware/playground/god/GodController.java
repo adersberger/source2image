@@ -7,6 +7,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class GodController {
     @RequestMapping("/")
     public String index() {
-        return "<b>Oh my god!!! Whattttt? Haa!<b/>";
+        return "I'm listening";
     }
 }
