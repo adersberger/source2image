@@ -1,0 +1,14 @@
+apiVersion: skaffold/v1beta16
+kind: Config
+build:
+  artifacts:
+    - image: skaffold-example-god
+      custom:
+        buildCommand: ./build-buildpacks.sh
+        dependencies:
+          paths:
+            - .
+deploy:
+  kubectl:
+    manifests:
+      - src/k8s/*.yaml
